@@ -133,11 +133,6 @@ RewriteRule . /index.html [L]
 location / {
     try_files $uri $uri/ /index.html;
 }
-
-# For subfolder deployment (e.g., example.com/app)
-# location /app {
-#     try_files $uri $uri/ /app/index.html;
-# }
 ```
 
 #### Node.js/Express
